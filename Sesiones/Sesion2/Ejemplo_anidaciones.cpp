@@ -28,5 +28,5 @@ int main() {
 
     cout << "This line is always printed." << endl; // Print message
 
-    return 0;
+    return 0; // Returns 0 to indicate that it was executed correctly
 }
