@@ -28,8 +28,8 @@ void mostrarLibros(Libro libros[], int cantidadLibros){
     } else
     {
         for (int i = 0; i < cantidadLibros; i++){
-            cout << i + 1 << "." << libros[i].titulo << "por " << libros[i].autor
-            << "ISBN: " << libros[i].ISBN << ", Año: " << libros[i].yearPublication << ")" 
+            cout << i + 1 << "." << libros[i].titulo << " por " << libros[i].autor
+            << ". ISBN: " << libros[i].ISBN << ", Año: " << libros[i].yearPublication << ")" 
             << endl;
         }
     }
