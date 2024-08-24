@@ -12,14 +12,14 @@ int main() {
     int opcion;
 
     do {
-        cout << "\n Sistema de Gestión de Libros\n";
+        cout << "\n Sistema de Gestion de Libros\n";
         cout << "1. Agregar un libro\n";
         cout << "2. Buscar un libro por titulo\n";
         cout << "3. Buscar un libro por ISBN\n";
         cout << "4. Mostrar todos los libros\n";
         cout << "5. Eliminar un libro\n";
         cout << "6. Salir\n";
-        cout << "Seleccione una opción\n";
+        cout << "Seleccione una opcion: ";
         cin >> opcion;
 
         switch (opcion)
