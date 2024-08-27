@@ -1,22 +1,27 @@
-# Ejemplos de códigos elaborados en la sesion 3
+# Ejemplos de códigos elaborados en la sesion 4
 
 ## Contenido
 
-- Type Casting
-- Recursividad
-- Direcciones
-- Enumeraciones
-- Goto
-- Definiciones
-- Punteros
-    - Referencia
-    - De-referencia
-    - Con estructuras
-    - Con arreglos
-    - Con funciones
-    - Punteros anidados
-
-
+- Programación orientada a objetos (OOP)
+- Definiciones iniciales
+    - Clase
+    - Objeto
+    - Método
+    - Propiedad o atributo
+    - Boilerplate
+    - Destructor
+- Tipos de acceso en clases
+    - Público
+    - Privado
+    - Protegido
+- Herencia
+    - Pública
+    - Privada
+    - Protegida
+    - Multinivel, múltiple u jerárquica
+    - Sobrecarga de operadores
+    - Funciones y clases amigas
+    - Funciones virtuales
 
 
 ## Instrucciones
