@@ -10,10 +10,6 @@ class Distance {
 
 public:
     Distance() : meter(0) {}
-
-    void addMeter() {
-        meter += 5;
-    }
 };
 
 // Accessing the private function
