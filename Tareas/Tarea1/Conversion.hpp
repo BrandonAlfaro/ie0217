@@ -19,7 +19,7 @@ class Conversion {
 
         void obtenerUnidad(const string &unidad);
 
-        void realizarConversion(int valor, string &unidad);
+        virtual void realizarConversion(int valor, string &unidad);
 
         virtual void mostrarConversion() const = 0;
 };
