@@ -10,7 +10,7 @@ Accesar a la terminal.
 
 ## Paso 2.
 
-Ir al directorio de los archivos.
+Ir al directorio del los archivos, específicamente donde se encuentra el Makefile.
 
 ```bash
 cd <direccion>
