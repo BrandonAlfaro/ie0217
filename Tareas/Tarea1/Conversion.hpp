@@ -11,15 +11,15 @@ class Conversion {
         int valor;
         string unidad;
 
-        Conversion(int valor, const string &unidad);
+        Conversion(int valor, string &unidad);
 
         virtual ~Conversion() = default;
 
         void obtenerValor(int valor);
 
-        void obtenerUnidad(const string &nombre);
+        void obtenerUnidad(const string &unidad);
 
-        void realizarConversion(int valor, const string &unidad);
+        void realizarConversion(int valor, string &unidad);
 
         virtual void mostrarConversion() const = 0;
 };
