@@ -1,5 +1,5 @@
 /**
-* @file Estadistica_Arreglo.hpp
+* @file Estadistica_Arreglo.cpp
 * @brief QUE TIENE EL PROGRAMA
 * 
 * DESCRIBIR EL PROGRAMA
@@ -31,27 +31,7 @@
 * SOFTWARE.
 */
 
-#ifndef ESTADISTICAS_HPP
-#define ESTADISTICAS_HPP
+#include "Estadistica_Arreglo.hpp"
 
-#include <iostream>
-#include <vector>
+using namespace std;
 
-class Estadisticas {
-public:
-    // Constructor que toma un puntero a los números y su tamaño
-    Estadisticas(double* numeros, int cantidadNumeros);
-
-    // Métodos para calcular las estadísticas y encontrar número
-    int calcularSuma();
-    double calcularPromedio();
-    int encontrarMaximo();
-    int encontrarMinimo();
-    bool buscarNumero(int numero);
-
-private:
-    int* numeros;  // Puntero al arreglo de números
-    int cantidadNumeros;   // Tamaño del arreglo
-};
-
-#endif
