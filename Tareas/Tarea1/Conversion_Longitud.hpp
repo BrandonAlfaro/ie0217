@@ -7,9 +7,9 @@ using namespace std;
 
 class ConversionLongitud : public Conversion {
     public:
-        ConversionLongitud(int valor, string &unidad);
+        ConversionLongitud(int valor, string &unidadActual, string &unidadNueva);
 
-        void realizarConversion(int valor, string &unidad);
+        void realizarConversion(int valor, string &unidadActual, string &unidadNueva);
 
         void mostrarConversion() const override;
 

@@ -2,17 +2,18 @@
 
 using namespace std;
 
-Conversion::Conversion(int valor, string &unidad) : valor(valor), unidad(unidad) {}
+Conversion::Conversion(int valor, string &unidad) : valor(valor), unidadActual(unidadActual), unidadNueva(unidadNueva)  {}
 
 void Conversion::obtenerValor(int valor){
     this->valor = valor;
 }
 
-void Conversion::obtenerUnidad(const string &unidad){
-    this->unidad = unidad;
+void Conversion::obtenerUnidades(const string &unidadActual, const string &unidadNueva){
+    this->unidadActual = unidadActual;
 }
 
-void Conversion::realizarConversion(int valor, string &unidad){
+void Conversion::realizarConversion(int valor, string &unidadActual, string &unidadNueva){
     this->valor = valor;
-    this->unidad = unidad;
+    this->unidadActual = unidadActual;
+    this->unidadNueva = unidadNueva;
 }
