@@ -1,6 +1,54 @@
 # **Tarea 1**
 
-## Parte Teórica
+## **Instrucciones**
+
+Intrucciones para correr el código.
+
+### Paso 1.
+
+Accesar a la terminal.
+
+### Paso 2.
+
+Ir al directorio del los archivos, específicamente donde se encuentra el Makefile, digitando en la terminal:
+
+```bash
+cd <direccion>
+```
+
+### Paso 3.
+
+Correr el archivo Makefile creado, digitando en la terminal:
+
+#### En Windows
+
+```bash
+mingw32-make
+```
+
+#### En Linux
+
+```bash
+make
+```
+
+### Paso 4.
+
+Interactuar con los programas.
+
+> [!TIP]
+> Para ingresar un arreglo de números diferente se puede editar los argumentos en el Makefile o ejecutar directamente el ejecutable del programa 2 creado durante la ejecución del Makefile y digitar los datos del arreglo.
+
+> [!TIP]
+> Windows: programa2.exe arg1 arg2 arg3 ...
+
+> [!TIP]
+> Linux: ./programa2 arg1 arg2 arg3 ...
+
+> [!NOTE]
+> [Documentación generada por Doxygen como una página web](https://brandonalfaro-convesion-y-estadistica.netlify.app/)
+
+## **Parte Teórica**
 
 1. Diferencias entre los lenguajes copilados e interpretados.
 
