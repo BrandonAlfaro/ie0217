@@ -43,14 +43,14 @@ public:
     Estadisticas(double* numeros, int cantidadNumeros);
 
     // Métodos para calcular las estadísticas y encontrar número
-    int calcularSuma();
+    double calcularSuma();
     double calcularPromedio();
-    int encontrarMaximo();
-    int encontrarMinimo();
+    double encontrarMaximo();
+    double encontrarMinimo();
     bool buscarNumero(int numero);
 
 private:
-    int* numeros;  // Puntero al arreglo de números
+    double* numeros;  // Puntero al arreglo de números
     int cantidadNumeros;   // Tamaño del arreglo
 };
 

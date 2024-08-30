@@ -35,3 +35,54 @@
 
 using namespace std;
 
+Estadisticas::Estadisticas(double* numeros, int cantidadNumeros) : numeros(numeros), cantidadNumeros(cantidadNumeros) {}
+
+double Estadisticas::calcularSuma(){
+    double suma = 0;
+    double* ptr = numeros;
+    for (int i = 0; i < cantidadNumeros; i++)
+    {
+        suma += *ptr;
+        ptr++;
+    }
+    return suma;
+}
+
+double Estadisticas::calcularPromedio(){
+    return calcularSuma()/cantidadNumeros;
+}
+
+double Estadisticas::encontrarMaximo() {
+    double* ptr = numeros;
+    double maximo = *ptr;
+    for (int i = 1; i < cantidadNumeros; ++i) {
+        ptr++;
+        if (*ptr > maximo) {
+            maximo = *ptr;
+        }
+    }
+    return maximo;
+}
+
+double Estadisticas::encontrarMinimo() {
+    double* ptr = numeros;
+    double minimo = *ptr;
+    for (int i = 1; i < cantidadNumeros; ++i) {
+        ptr++;
+        if (*ptr < minimo) {
+            minimo = *ptr;
+        }
+    }
+    return minimo;
+}
+
+bool Estadisticas::buscarNumero(double numero) {
+    double* ptr = numeros;
+    for (int i = 0; i < cantidadNumeros; ++i) {
+        if (*ptr == numero) {
+            return true;
+        }
+        ptr++;
+    }
+    return false;
+}
