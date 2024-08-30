@@ -1,9 +1,10 @@
 /**
 * @file Estadistica_Arreglo.hpp
-* @brief QUE TIENE EL PROGRAMA
+* @brief Programa principal para el cálculo de estadísticas y busqueda de números.
 * 
-* DESCRIBIR EL PROGRAMA
-* 
+* El progrma permite realizar el cálculo de varios parámetros estadísticos y buscar un
+* número dentro del arreglo. El arreglo es proporcionado desde la ventana de comandos al
+* ejecutar el código. 
 * 
 * @author Brandon Alfaro
 * @date 2024-08-30

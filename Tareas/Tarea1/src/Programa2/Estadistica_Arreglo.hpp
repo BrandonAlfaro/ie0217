@@ -1,9 +1,9 @@
 /**
 * @file Estadistica_Arreglo.hpp
-* @brief QUE TIENE EL PROGRAMA
+* @brief Declaración de la clase y métodos para el cálculo estadístico y busqueda de un número.
 * 
-* DESCRIBIR EL PROGRAMA
-* 
+* Este archivo contiene la clase y métodos para realizar el cálculo de las estadísticas
+* y busqueda de un número en el arreglo proporcionado por el usuario.
 * 
 * @author Brandon Alfaro
 * @date 2024-08-30
