@@ -1,5 +1,5 @@
 /**
-* @file Estadistica_Arreglo.hpp
+* @file main.cpp
 * @brief Programa principal para el cálculo de estadísticas y busqueda de números.
 * 
 * El progrma permite realizar el cálculo de varios parámetros estadísticos y buscar un

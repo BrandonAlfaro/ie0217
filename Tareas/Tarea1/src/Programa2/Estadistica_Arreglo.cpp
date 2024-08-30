@@ -37,6 +37,11 @@ using namespace std;
 
 Estadisticas::Estadisticas(double* numeros, int cantidadNumeros) : numeros(numeros), cantidadNumeros(cantidadNumeros) {}
 
+/**
+* @brief Calcula la suma de los números en el arreglo.
+* @return La suma de los números en el arreglo.
+*/
+
 double Estadisticas::calcularSuma(){
     double suma = 0;
     double* ptr = numeros;
@@ -48,9 +53,19 @@ double Estadisticas::calcularSuma(){
     return suma;
 }
 
+/**
+* @brief Calcula el promedio de los números en el arreglo.
+* @return El promedio de los números en el arreglo.
+*/
+
 double Estadisticas::calcularPromedio(){
     return calcularSuma()/cantidadNumeros;
 }
+
+/**
+* @brief Encuentra el valor máximo en el arreglo de números.
+* @return El valor máximo en el arreglo.
+*/
 
 double Estadisticas::encontrarMaximo() {
     double* ptr = numeros;
@@ -64,6 +79,11 @@ double Estadisticas::encontrarMaximo() {
     return maximo;
 }
 
+/**
+* @brief Encuentra el valor mínimo en el arreglo de números.
+* @return El valor mínimo en el arreglo.
+*/
+
 double Estadisticas::encontrarMinimo() {
     double* ptr = numeros;
     double minimo = *ptr;
@@ -75,6 +95,12 @@ double Estadisticas::encontrarMinimo() {
     }
     return minimo;
 }
+
+/**
+* @brief Busca un número específico en el arreglo.
+* @param numero El número a buscar en el arreglo.
+* @return true si el número se encuentra en el arreglo, false en caso contrario.
+*/
 
 bool Estadisticas::buscarNumero(double numero) {
     double* ptr = numeros;

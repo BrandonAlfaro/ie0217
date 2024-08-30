@@ -37,21 +37,64 @@
 #include <iostream>
 #include <vector>
 
+/**
+* @class Estadisticas
+* @brief Clase para calcular estadísticas básicas de un arreglo y busqueda de números.
+* 
+* La clase Estadisticas permite realizar cálculos estadísticos de un arreglo de números, como
+* la suma, el promedio, el valor máximo, el valor mínimo y la búsqueda de un número específico.
+*/
+
 class Estadisticas {
 public:
-    // Constructor que toma un puntero a los números y su tamaño
+
+    /**
+    * @brief Constructor de la clase Estadisticas.
+    * @param numeros Puntero al arreglo de números sobre el cual se realizarán los cálculos.
+    * @param cantidadNumeros Tamaño del arreglo de números.
+    */
+
     Estadisticas(double* numeros, int cantidadNumeros);
 
-    // Métodos para calcular las estadísticas y encontrar número
+    /**
+    * @brief Calcula la suma de los números en el arreglo.
+    * @return La suma de los números en el arreglo.
+    */
+
     double calcularSuma();
+
+    /**
+    * @brief Calcula el promedio de los números en el arreglo.
+    * @return El promedio de los números en el arreglo.
+    */
+
     double calcularPromedio();
+
+    /**
+    * @brief Encuentra el valor máximo en el arreglo de números.
+    * @return El valor máximo en el arreglo.
+    */
+
     double encontrarMaximo();
+
+    /**
+    * @brief Encuentra el valor mínimo en el arreglo de números.
+    * @return El valor mínimo en el arreglo.
+    */
+
     double encontrarMinimo();
+
+    /**
+    * @brief Busca un número específico en el arreglo.
+    * @param numero El número a buscar en el arreglo.
+    * @return true si el número se encuentra en el arreglo, false en caso contrario.
+    */
+
     bool buscarNumero(double numero);
 
 private:
-    double* numeros;  // Puntero al arreglo de números
-    int cantidadNumeros;   // Tamaño del arreglo
+    double* numeros;  ///< Puntero al arreglo de números.
+    int cantidadNumeros;   ///< Tamaño del arreglo de números.
 };
 
 #endif
