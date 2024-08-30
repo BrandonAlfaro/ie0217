@@ -284,7 +284,7 @@ int main(){
         obtenerValor();
 
         // Dependiendo de la unidad ejecuta el código para obtener prefijos o escalas.
-        if (conv.unidad == Longitud | conv.unidad == Masa)
+        if (conv.unidad == Longitud || conv.unidad == Masa)
         {
             obtenerPrefijos();
         }
