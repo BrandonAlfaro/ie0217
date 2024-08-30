@@ -1,8 +1,46 @@
+/**
+* @file main.cpp
+* @brief Programa principal para la conversión de unidades de longitud, masa y temperatura.
+* 
+* El programa permite convertir valores entre diferentes prefijos de 
+* longitud, masa, y entre diferentes escalas de temperatura. El usuario puede seleccionar 
+* la unidad de medida y los prefijos o escalas para realizar la conversión deseada.
+* 
+* @author Brandon Alfaro
+* @date 2024-08-29
+* 
+* @license MIT
+* 
+* Copyright (c) 2024 Tu Nombre
+* 
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+* 
+* The above copyright notice and this permission notice shall be included in all
+* copies or substantial portions of the Software.
+* 
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*/
+
 #include <iostream>
 #include "Conversiones.hpp"
 #include <iomanip>
 
 using namespace std;
+
+/**
+ * @brief Estructura global para parámetros de conversión.
+ */
 
 Conversion conv;
 int opcion;
@@ -45,6 +83,7 @@ void obtenerOpcion() {
             cout << "Opción inválida. Por favor, seleccione una opción válida." << endl;
         }
     }
+
 }
 
 void obtenerPrefijos() {
@@ -137,3 +176,57 @@ void obtenerPrefijos() {
     }
 
 }
+
+void obtenerValor() {
+    cout << "Digite el valor numerico que desea convertir: ";
+    cin >> conv.valor;
+}
+
+void obtenerEscalas() {
+
+    while (true)
+    {
+    
+        cout << "Digite la escala actual de la cantidad: ";
+        cin >> escala;
+
+        if (escala == 'C') {
+            conv.escalaActual = Celsius;
+            break;  // Simula el comportamiento del switch
+        } else if (escala == 'F') {
+            conv.escalaActual = Fahrenheit;
+            break;  // Simula el comportamiento del switch
+        } else if (escala == 'K') {
+            conv.escalaActual = Kelvin;
+            break;  // Simula el comportamiento del switch
+        } else {
+            cout << "La escala digitada no es valida." << endl;
+            continue;  // Continúa con la siguiente iteración del bucle
+        }
+
+    }
+    
+    while (true)
+    {
+    
+        cout << "Digite la escala nueva de la cantidad: ";
+        cin >> escala;
+
+        if (escala == 'C') {
+            conv.escalaNueva = Celsius;
+            break;  // Simula el comportamiento del switch
+        } else if (escala == 'F') {
+            conv.escalaNueva = Fahrenheit;
+            break;  // Simula el comportamiento del switch
+        } else if (escala == 'K') {
+            conv.escalaNueva = Kelvin;
+            break;  // Simula el comportamiento del switch
+        } else {
+            cout << "La escala digitada no es valida." << endl;
+            continue;  // Continúa con la siguiente iteración del bucle
+        }
+
+    }
+
+}
+
