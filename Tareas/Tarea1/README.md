@@ -50,9 +50,9 @@ Interactuar con los programas.
 
 ## **Parte Teórica**
 
-1. Diferencias entre los lenguajes copilados e interpretados.
+1. Diferencias entre los lenguajes compilados e interpretados.
 
-    En el lenguaje compilado el código fuente se pasa a código ejecutable antes de correr el programa. En cambio en el lenguaje interpretado el codigo fuente se ejecuta linea por linea mientras se corre el programa.
+    En el lenguaje compilado el código fuente se pasa a código ejecutable antes de correr el programa. En cambio en el lenguaje interpretado el código fuente se ejecuta línea por línea mientras se corre el programa.
 
     - <span style="color: lightskyblue;">C++</span> es un lenguaje <u>copilado</u>.
     - <span style="color: green;">Python</span> es un lenguaje <u>interpretado</u>.
@@ -77,11 +77,11 @@ Interactuar con los programas.
 
     Función principal:
 
-    Es combinar módulos de código cuando se termina la etapa de generación de archivos .obj. Esto mediante la vinculacion de definiciones en los archivos objeto o bibliotecas, asignacion de direcciones de memoria e incluye el codigo de bibliotecas o referencias de bibliotecas dinamicas.
+    Es combinar módulos de código cuando se termina la etapa de generación de archivos .obj. Esto mediante la vinculación de definiciones en los archivos objeto o bibliotecas, asignacion de direcciones de memoria e incluye el código de bibliotecas o referencias de bibliotecas dinamicas.
 
     Importancia:
 
-    Facilita la union del codigo que es separado en diferentes archivos en una etapa anterior. Tambien optimiza el codigo descartando partes no usadas en el codigo y facilita el uso de bibliotecas porque no incluye todo el codigo fuente de esta.
+    Facilita la unión del código que es separado en diferentes archivos en una etapa anterior. Tambien optimiza el código descartando partes no usadas en el código y facilita el uso de bibliotecas porque no incluye todo el código fuente de esta.
 
 4. Diferencia entre los operadores "=" y "==".
 
@@ -111,13 +111,13 @@ Interactuar con los programas.
     }
     ```
 
-    En la iteracion 7 y 9 del ciclo se imprimen los valores 0 y 45 respectivamente.
+    En la iteración 7 y 9 del ciclo se imprimen los valores 0 y 45 respectivamente.
     
-    El codigo suma el indice "i" a la variable "sum".
+    El código suma el índice "i" a la variable "sum".
 
-    Luego se compara el modulo del indice entre 3 con 0 (i % 3 == 0).
+    Luego se compara el módulo del índice entre 3 con 0 (i % 3 == 0).
 
-    Si el modulo da un valor diferente de 0, se guarda un 0 en la variable "result", sino se guarda el valor de la variable "sum".
+    Si el módulo da un valor diferente de 0, se guarda un 0 en la variable "result", sino se guarda el valor de la variable "sum".
 
     Por último, imprime la variable "result" en cada iteración del bucle for hasta que el índice "i" llegue a menor que 10(se ejecutan 9 iteraciones).
 
@@ -160,7 +160,7 @@ Interactuar con los programas.
 
     Esto utiliza la funcion "sum" que acepta un parametro y un valor de tipo entero.
 
-10. Diferencia entre variable local y variable estatica.
+10. Diferencia entre variable local y variable estática.
 
     Variable local: Su alcance es solo dentro de la funcion donde se declara, mientras se ejecuta ese funcion.
     Variable estática: Su alcance es solo dentro de la funcion donde se declara, desde que se utiliza por primera vez la funcion hasta que finaliza el programa.
@@ -193,7 +193,7 @@ Interactuar con los programas.
 
 13. Archivos ".hpp", ".cpp" y "main.cpp"
 
-    Es utili dividir el codigo en diferentes archivos para organización, la reutilización del código, la facilidad de mantenimiento, y la optimización del tiempo de compilación.
+    Es utili dividir el código en diferentes archivos para organización, la reutilización del código, la facilidad de mantenimiento, y la optimización del tiempo de compilación.
 
     - .hpp: Contienen las declaraciones de funciones, clases, constantes, y variables que se usan en los archivos ".cpp".
     - .cpp: Contienen la implementación de las funciones, métodos y cualquier lógica detallada que se declaró en los archivos ".hpp".
@@ -205,11 +205,11 @@ Interactuar con los programas.
 
 15. Directiva "#ifndef".
 
-    Es una preinstrucción para el preprocesador que se utiliza para prevenir la inclusión múltiple de un archivo de encabezado. Esto es importante para evitar errores de compilación, problemas con la definición múltiple de variables, funciones o clases, mejora del tiempo de compilación, claridad del codigo y mantenimiento
+    Es una preinstrucción para el preprocesador que se utiliza para prevenir la inclusión múltiple de un archivo de encabezado. Esto es importante para evitar errores de compilación, problemas con la definición múltiple de variables, funciones o clases, mejora del tiempo de compilación, claridad del código y mantenimiento
 
 16. Punteros.
 
-    Un puntero es una variable que almacena la dirección de memoria de otra variable. Es util para el acceso directo a la memoria, paso de parámetros por referencia, estructuras dinámicas de datos, asignación dinámica de memoria y punteros a funciones.
+    Un puntero es una variable que almacena la dirección de memoria de otra variable. Es útil para el acceso directo a la memoria, paso de parámetros por referencia, estructuras dinámicas de datos, asignación dinámica de memoria y punteros a funciones.
 
     Declaracion e inicializacion:
 
@@ -263,16 +263,16 @@ Interactuar con los programas.
 
 24. Almacenamiento de variables locales y globales.
 
-    Las variables locales se almacenan en la pila, existen mientras se ejecute el bloque de codigo al que pertenecen. Por otra parte, las variables globales se almacenan en la memoria estática, existen mientras se ejecute el programa.
+    Las variables locales se almacenan en la pila, existen mientras se ejecute el bloque de código al que pertenecen. Por otra parte, las variables globales se almacenan en la memoria estática, existen mientras se ejecute el programa.
 
 25. Memory leak.
 
     En español "memory leak" significa fuga de memoria. Esto pasa cuando el programa que se esta ejecutando no libera la memoria del sistema despues de que se usa. O sea, que la memoria no esta disponible para otros procesos, lo cual puede volver la ejecucion lenta o que se bloquee.
 
-26. Memoria dinamica
+26. Memoria dinámica
 
-    La memoria dinamica es la memoria que se aparta o se asigna y se libera cuando se esta ejecutando el programa.
+    La memoria dinámica es la memoria que se aparta o se asigna y se libera cuando se esta ejecutando el programa.
 
-27. Memoria estatica
+27. Memoria estática
 
-    La memoria estatica es la memoria que se asigna cuando se compila el programa. Ademas, la cantidad de memoria apartada no cambia durante la ejecucion del programa.
+    La memoria estática es la memoria que se asigna cuando se compila el programa. Ademas, la cantidad de memoria apartada no cambia durante la ejecucion del programa.
