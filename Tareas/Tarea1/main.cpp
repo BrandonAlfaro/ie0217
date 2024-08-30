@@ -1,30 +1,21 @@
-#include <iostream>        // Para std::cout y std::cin
-#include "Conversion_Longitud.hpp" 
-#include <string>
+#include <iostream>
+#include "Conversiones.hpp"
+#include <iomanip>
 
-using namespace std;  // Para evitar escribir std:: cada vez
+using namespace std;
 
-int main() {
-    int valor;
-        string unidadActual;
-        string unidadNueva;
-    
-    // Crear una instancia de la clase ConversionLongitud
-    ConversionLongitud conversion;
+Conversion conv;
+int opcion;
+char prefijo;
+char escala;
 
-    // Solicitar el valor de entrada al usuario
-    cout << "Digite el valor al que desea realizar la conversión: ";
-    cin >> conversion.valor;
 
-    // Solicitar la unidad actual al usuario
-    cout << "Digite el prefijo y unidad actual de la cantidad (Ej: 'Km'): ";
-    cin >> conversion.unidadActual;
+void mostrarMenu() {
 
-    // Solicitar la unidad nueva al usuario
-    cout << "Digite el prefijo y unidad nueva de la cantidad (Ej: 'Km'): ";
-    cin >> conversion.unidadNueva;
+    cout << "Conversion de unidades:" << endl;
+    cout << "Opción 1: Convertir entre diferentes unidades de longitud." << endl;
+    cout << "Opción 2: Convertir entre diferentes unidades de peso." << endl;
+    cout << "Opción 3: Convertir entre diferentes unidades de temperatura." << endl;
+    cout << "Opción 4: Salir del programa." << endl;
 
-    conversion.realizarConversion(conversion.valor, conversion.unidadActual, conversion.unidadNueva);
-
-    return 0;
 }

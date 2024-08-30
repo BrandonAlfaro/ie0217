@@ -93,4 +93,3 @@ float conversionTemperatura(float valorTemperatura, EscalaTemperatura escalaActu
     }
     return valorTemperatura; // Si las escalas son iguales
 }
-    
