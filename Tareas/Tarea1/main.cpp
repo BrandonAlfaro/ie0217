@@ -105,6 +105,8 @@ void obtenerOpcion() {
 
 void obtenerPrefijos() {
 
+    cout << "Prefijos: 'P', 'G', 'T', 'M', 'K', 'm', 'u', 'n', 'p', 'f'.(Si no tiene prefijo digitar 'N')" << endl;
+
     while (true)
     {
         cout << "Digite el prefijo actual de la cantidad: ";
@@ -215,6 +217,8 @@ void obtenerValor() {
 
 void obtenerEscalas() {
 
+    cout << "Escalas: 'C', 'K', 'F'." << endl;
+
     while (true)
     {
     
@@ -311,26 +315,26 @@ int main(){
         {
             if (prefijo == 'N')
             {
-                cout << "El resultado de la conversion es: " << conv.valor << " " << "g" << endl;
+                cout << "El resultado de la conversion de masa es: " << conv.valor << " " << "g" << endl;
             }
             else
             {
-                cout << "El resultado de la conversion es: " << conv.valor << " " << prefijo << "g" << endl;
+                cout << "El resultado de la conversion de masa es: " << conv.valor << " " << prefijo << "g" << endl;
             }
         }
         else if (conv.unidad == Temperatura)
         {
-            cout << "El resultado de la conversion es: " << conv.valor << " " << escala << endl;
+            cout << "El resultado de la conversion de temperatura es: " << conv.valor << " " << escala << endl;
         }
         else if (conv.unidad == Longitud)
         {
             if (prefijo == 'N')
             {
-                cout << "El resultado de la conversion es: " << conv.valor << " " << "m" << endl;
+                cout << "El resultado de la conversion de longitud es: " << conv.valor << " " << "m" << endl;
             }
             else
             {
-                cout << "El resultado de la conversion es: " << conv.valor << " " << prefijo << "m" << endl;
+                cout << "El resultado de la conversion de longitud es: " << conv.valor << " " << prefijo << "m" << endl;
             }
         }
 
