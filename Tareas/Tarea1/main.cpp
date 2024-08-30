@@ -39,14 +39,17 @@
 using namespace std;
 
 /**
- * @brief Estructura global para parámetros de conversión.
- */
+* @brief Estructura global para parámetros de conversión.
+*/
 
 Conversion conv;
 int opcion;
 char prefijo;
 char escala;
 
+/**
+* @brief Muestra el menú de opciones al usuario.
+*/
 
 void mostrarMenu() {
 
@@ -57,6 +60,13 @@ void mostrarMenu() {
     cout << "Opción 4: Salir del programa." << endl;
 
 }
+
+/**
+* @brief Obtiene la opción seleccionada por el usuario.
+* 
+* Esta función solicita al usuario que seleccione una opción del menú y asigna
+* la unidad de medida correspondiente a la estructura global `conv`.
+*/
 
 void obtenerOpcion() {
 
@@ -85,6 +95,13 @@ void obtenerOpcion() {
     }
 
 }
+
+/**
+* @brief Solicita al usuario los prefijos de las unidades de medida.
+* 
+* Esta función solicita al usuario que ingrese el prefijo actual y el nuevo prefijo 
+* para la conversión de las unidades de longitud o masa, y los asigna a la estructura `conv`.
+*/
 
 void obtenerPrefijos() {
 
@@ -177,10 +194,24 @@ void obtenerPrefijos() {
 
 }
 
+/**
+* @brief Solicita al usuario el valor numérico a convertir.
+* 
+* Esta función pide al usuario que ingrese el valor numérico que desea convertir y lo asigna
+* a la estructura `conv`.
+*/
+
 void obtenerValor() {
     cout << "Digite el valor numerico que desea convertir: ";
     cin >> conv.valor;
 }
+
+/**
+* @brief Solicita al usuario las escalas de temperatura.
+* 
+* Esta función solicita al usuario que ingrese la escala actual y la nueva escala para la conversión 
+* de temperatura, y los asigna a la estructura `conv`.
+*/
 
 void obtenerEscalas() {
 
@@ -230,3 +261,82 @@ void obtenerEscalas() {
 
 }
 
+/**
+* @brief Función principal del programa.
+* 
+* La función principal ejecuta un bucle que muestra un menú al usuario y le permite seleccionar 
+* una unidad de medida y realizar conversiones entre diferentes prefijos o escalas.
+* 
+* @return int Entero que índica que el programa se ejecuto exitosamente.
+*/
+
+int main(){
+
+    while (true) {
+
+        // Llamadas de funciones.
+        mostrarMenu();
+        obtenerOpcion();
+        obtenerValor();
+
+        // Dependiendo de la unidad ejecuta el código para obtener prefijos o escalas.
+        if (conv.unidad == Longitud | conv.unidad == Masa)
+        {
+            obtenerPrefijos();
+        }
+        else if (conv.unidad == Temperatura)
+        {
+            obtenerEscalas();
+        }
+
+        // Dependiendo de la unidad ingresada se ejecuta el código que realiza la conversión requerida.
+        if (conv.unidad == Longitud)
+        {
+            conv.valor = conversionLongitud(conv.valor, conv.prefijoActual, conv.prefijoNuevo);
+        }
+        else if (conv.unidad == Masa)
+        {
+            conv.valor = conversionMasa(conv.valor, conv.prefijoActual, conv.prefijoNuevo);
+        }
+        else if (conv.unidad == Temperatura)
+        {
+            conv.valor = conversionTemperatura(conv.valor, conv.escalaActual, conv.escalaNueva);
+        }
+        
+        // Imprime con mas precisión el resultado.
+        cout << fixed << setprecision(12);
+
+        // Dependiendo de la unidad, imprime el valor, unidad y/o prefijo correspondiente.
+        if (conv.unidad == Masa)
+        {
+            if (prefijo == 'N')
+            {
+                cout << "El resultado de la conversion es: " << conv.valor << " " << "g" << endl;
+            }
+            else
+            {
+                cout << "El resultado de la conversion es: " << conv.valor << " " << prefijo << "g" << endl;
+            }
+        }
+        else if (conv.unidad == Temperatura)
+        {
+            cout << "El resultado de la conversion es: " << conv.valor << " " << escala << endl;
+        }
+        else if (conv.unidad == Longitud)
+        {
+            if (prefijo == 'N')
+            {
+                cout << "El resultado de la conversion es: " << conv.valor << " " << "m" << endl;
+            }
+            else
+            {
+                cout << "El resultado de la conversion es: " << conv.valor << " " << prefijo << "m" << endl;
+            }
+        }
+
+        cout << endl;
+        
+    }
+    return 0; // índica que el programa se ejecuto exitosamente
+
+}
