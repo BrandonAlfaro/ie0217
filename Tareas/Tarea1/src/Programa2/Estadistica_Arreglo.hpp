@@ -10,7 +10,7 @@
 * 
 * @license MIT
 * 
-* Copyright (c) 2024 Tu Nombre
+* Copyright (c) 2024 Brandon Alfaro
 * 
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -47,7 +47,7 @@ public:
     double calcularPromedio();
     double encontrarMaximo();
     double encontrarMinimo();
-    bool buscarNumero(int numero);
+    bool buscarNumero(double numero);
 
 private:
     double* numeros;  // Puntero al arreglo de números
