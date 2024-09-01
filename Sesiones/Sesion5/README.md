@@ -1,28 +1,25 @@
-# Ejemplos de códigos elaborados en la sesion 5
+# Ejemplos de códigos elaborados en la sesión 5
 
 ## Contenido
 
-- Programación orientada a objetos (OOP)
-- Definiciones iniciales
-    - Clase
-    - Objeto
-    - Método
-    - Propiedad o atributo
-    - Boilerplate
-    - Destructor
-- Tipos de acceso en clases
-    - Público
-    - Privado
-    - Protegido
-- Herencia
-    - Pública
-    - Privada
-    - Protegida
-    - Multinivel, múltiple u jerárquica
-    - Sobrecarga de operadores
-    - Funciones y clases amigas
-    - Funciones virtuales
-
+- Almacenamiento de los programas en C++.
+- Memoria dinámica:
+    - new y delete.
+    - malloc, calloc, realloc y free.
+- Algoritmos:
+    - Definición y características de un buen algoritmo.
+    - Complejidad y eficiencia de algoritmos.
+    - Notaciones asintóticas: Big-O, Omega, Theta.
+    - Corrección de algoritmos.
+- Estructuras de datos:
+    - Stack (pila).
+    - Queue (cola).
+    - Linked list (lista enlazada).
+    - Hash-table .
+    - Tree (Árbol binario):
+        - Lleno.
+        - Perfecto.
+        - Completo.
 
 ## **Instrucciones**
 
