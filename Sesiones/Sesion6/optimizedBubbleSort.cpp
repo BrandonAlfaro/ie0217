@@ -1,4 +1,4 @@
-// Implementación Simple de Bubble Sort en C++
+// Implementación Optimizad de Bubble Sort in C++
 
 // Bibliotecas
 #include <iostream>
@@ -6,15 +6,18 @@
 using namespace std;
 
 
-// Función Bubble Sort Simple
+// Función Bubble Sort Optimizada
 void bubbleSort(int array[], int size) // Arreglo de números enteros, tamaño del arreglo
 {
     // Bucle para accesar a cada elemento del arreglo
     for (int step = 0; step < (size - 1); ++step) // Inicio = 0, Fin < (size - 1), step + 1. El 'size - 1' es porque se ocupan n-1 pasos o comparaciones
     {
+        int swapped = 0; // Indica si se intercambió un número.
+        
         // Bucle para comparar elementos del arreglo
-        for (int i = 0; i < (size - step - 1); ++i) // (size - step - 1). El '-1' es para que no acceda mas allá del array. '-step' es porque se acomoda de derecha a izquierda, esto evita comparaciones ya acomodadas
+        for (int i = 0; i < (size - step - 1); ++i) // (size - step - 1). El '-1' es para que no acceda mas allá del array. '-step' es porque se acomoda de derecha a izquierda, esto evita comparaciones ya acomodadas.
         {
+            
             // Compara dos elementos consecutivos
             if (array[i] > array[i + 1]) // > orden ascendente, < orden descendente
             {
@@ -22,8 +25,13 @@ void bubbleSort(int array[], int size) // Arreglo de números enteros, tamaño d
                 int temp = array[i];
                 array[i] = array[i + 1];
                 array[i + 1] = temp;
+                
+                swapped = 1;
             }
         }
+
+        if (swapped == 0) // Si swapped = 0 no se intercambiaron números
+            break; // Termina el bucle
     }
 }
 
