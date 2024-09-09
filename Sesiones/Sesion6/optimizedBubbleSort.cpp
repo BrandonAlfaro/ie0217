@@ -1,4 +1,4 @@
-// Implementación Optimizad de Bubble Sort in C++
+// Implementación Optimizada de Bubble Sort en C++
 
 // Bibliotecas
 #include <iostream>
