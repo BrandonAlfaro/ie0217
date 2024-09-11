@@ -1,7 +1,7 @@
 #ifndef LISTA_ENLAZADA_HPP
 #define LISTA_ENLAZADA_HPP
 
-#include "Cancion.hpp"
+#include "cancion.hpp"
 
 using namespace std;
 
@@ -26,9 +26,9 @@ public:
     ~ListaEnlazada();
 
     // Métodos
-    void insertarAlFinal(Cancion* cancion);
-    void eliminarPorNombre(const std::string& nombre);
-    void modificarCancion(const std::string& nombre);
+    void insertar(Cancion* cancion);
+    void eliminarPorNombre(const string& nombre);
+    void modificarCancion(const string& nombre);
     void imprimirLista() const;
     void liberarMemoria();
 };
