@@ -64,9 +64,9 @@ void ListaEnlazada::modificarCancion(const string& nombre) {
             float nuevaDuracion;
 
             cout << "Ingrese el nuevo nombre de la canción: ";
-            cin >> nuevoNombre;
+            getline(cin, nuevoNombre);
             cout << "Ingrese el nuevo nombre del artista: ";
-            cin >> nuevoArtista;
+            getline(cin, nuevoArtista);
             cout << "Ingrese la nueva duración de la canción: ";
             cin >> nuevaDuracion;
 
