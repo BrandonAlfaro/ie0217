@@ -5,10 +5,20 @@ using namespace std;
 
 int main() {
     ArbolBinarioBusqueda arbol; // Instancia arbol
+
+    arbol.insertar(15);
+    arbol.insertar(10);
+    arbol.insertar(20);
+    arbol.insertar(8);
+    arbol.insertar(12);
+    arbol.insertar(17);
+    arbol.insertar(25);
+
     int opcion, valor; // Declara variables
 
     do {
         // Menu
+        cout << endl;
         cout << "1. Insertar un nodo\n";
         cout << "2. Recorrido en Inorden\n";
         cout << "3. Eliminar un valor\n";
@@ -18,6 +28,7 @@ int main() {
         cout << "7. Salir\n";
         cout << "Seleccione una opción: ";
         cin >> opcion;
+        cout << endl;
 
         // Se elige la accion requerida
         switch (opcion) {
@@ -64,6 +75,7 @@ int main() {
             default:
                 cout << "Opción inválida.\n";
         }
+
     } while (opcion != 7); // Repite el menu hasta opcion 7
 
     return 0;

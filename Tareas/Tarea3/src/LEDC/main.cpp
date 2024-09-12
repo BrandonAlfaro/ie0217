@@ -6,6 +6,9 @@
 using namespace std;
 
 void menu() {
+    
+    // Menú
+    cout << endl;
     cout << "1. Insertar una nueva canción\n";
     cout << "2. Eliminar una canción\n";
     cout << "3. Modificar los datos de una canción existente\n";
@@ -17,15 +20,11 @@ void menu() {
 int main() {
     ListaEnlazada lista;
 
-    // Inicialización con 3 canciones predeterminadas
-    lista.insertar(new Cancion("Song1", "Artist1", 3.5));
-    lista.insertar(new Cancion("Song2", "Artist2", 4.0));
-    lista.insertar(new Cancion("Song3", "Artist3", 5.2));
-
     int opcion;
     do {
         menu();
         cin >> opcion;
+        cout << endl;
         cin.ignore();
 
         if (opcion == 1) {

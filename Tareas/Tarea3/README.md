@@ -60,7 +60,7 @@ Interactuar con los programas.
 
 2. Variables en el código.
 
-    ![alt text](image.png)
+    ![alt text](./images/image.png)
 
     - globalVar: se almacena en la sección Global and Static Variables, porque la existencia de la variable es igual a la ejecución del programa.
 

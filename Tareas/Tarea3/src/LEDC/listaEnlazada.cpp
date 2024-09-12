@@ -86,7 +86,7 @@ void ListaEnlazada::imprimirLista() const {
     Nodo* actual = cabeza;
     while (actual != nullptr) {
         cout << actual->cancion->getNombre() << " - " << actual->cancion->getArtista()
-                  << " (" << actual->cancion->getDuracion() << " mins)\n";
+                  << " (" << actual->cancion->getDuracion() << " min)\n";
         actual = actual->siguiente;
     }
 }
