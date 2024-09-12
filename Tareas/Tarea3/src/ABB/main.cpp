@@ -1,11 +1,58 @@
+/**
+ * @file main.cpp
+ * @brief Programa principal para la interacción con el Árbol Binario de Búsqueda (ABB).
+ * 
+ * Este archivo contiene el programa principal que permite al usuario interactuar
+ * con un Árbol Binario de Búsqueda (ABB). Las operaciones que se pueden realizar
+ * incluyen insertar, eliminar, buscar nodos, y verificar la altura y balance del árbol.
+ * 
+ * El usuario interactúa mediante un menú que le permite elegir entre diferentes opciones.
+ * 
+ * @author Brandon Alfaro
+ * @date 2024-09-11
+ * 
+ * @license MIT
+ * 
+ * Copyright (c) 2024 Brandon Alfaro
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
 #include "ABB.hpp"
 #include <iostream>
 
 using namespace std;
 
+/**
+ * @brief Función principal para la ejecución del programa.
+ * 
+ * El programa crea un Árbol Binario de Búsqueda (ABB) y permite al usuario realizar
+ * diversas operaciones a través de un menú interactivo. El menú permite insertar
+ * nodos, realizar recorridos en inorden, eliminar nodos, buscar nodos, obtener la
+ * altura del árbol y verificar si el árbol está balanceado.
+ * 
+ * @return int Código de retorno del programa (0 si finaliza correctamente).
+ */
 int main() {
     ArbolBinarioBusqueda arbol; // Instancia arbol
 
+    // Insertar nodos predeterminados
     arbol.insertar(15);
     arbol.insertar(10);
     arbol.insertar(20);
@@ -16,8 +63,9 @@ int main() {
 
     int opcion, valor; // Declara variables
 
+    // Menú interactivo
     do {
-        // Menu
+        // Mostrar menú
         cout << endl;
         cout << "1. Insertar un nodo\n";
         cout << "2. Recorrido en Inorden\n";
@@ -30,7 +78,7 @@ int main() {
         cin >> opcion;
         cout << endl;
 
-        // Se elige la accion requerida
+        // Selección de acción basada en la opción del usuario
         switch (opcion) {
             case 1:
                 cout << "Ingrese un valor: ";
@@ -76,7 +124,7 @@ int main() {
                 cout << "Opción inválida.\n";
         }
 
-    } while (opcion != 7); // Repite el menu hasta opcion 7
+    } while (opcion != 7); // Repite el menú hasta que el usuario seleccione la opción 7 (Salir)
 
     return 0;
 }
