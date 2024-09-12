@@ -1,4 +1,6 @@
-# **Tarea 3**
+Árbol Binario de Búsqueda con Verificación y Balance (ABB)
+
+Gestión de una Lista Enlazada Dinámica de Canciones (LEDC)
 
 ## **Instrucciones**
 
@@ -36,6 +38,11 @@ make
 
 Interactuar con los programas.
 
+## Página Web 
+
+> [!NOTE]
+> [Documentación generada por Doxygen como una página web](https://programas-abb-ledc.netlify.app/)
+
 ## **Parte Teórica**
 
 1. Sección del nivel de usuario de la memoria.
@@ -60,7 +67,22 @@ Interactuar con los programas.
 
 2. Variables en el código.
 
-    ![alt text](./images/image.png)
+    ```cpp
+    #include <iostream>
+
+    int globalVar = 42;
+
+    int main() {
+        static int staticVar = 100;
+        int localVar = 10;
+        int* dynamicVar = new int(5);
+
+        delete dynamicVar;
+
+        return 0;
+    }
+
+    ```
 
     - globalVar: se almacena en la sección Global and Static Variables, porque la existencia de la variable es igual a la ejecución del programa.
 
