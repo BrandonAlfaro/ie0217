@@ -21,7 +21,7 @@ cd <direccion>
 Crear un archivo ejecutable(.exe) y copilar el código en lenguaje C++ a correr.
 
 ```bash
-g++ -o .\<nombre_ejecutable.exe> .\<nombre_archivo_codigo.cpp>
+g++ -o .\<nombre_ejecutable.exe> .\<nombre_archivo_codigo.cpp> .\<nombre_archivo_codigo.hpp>
 ```
 
 ### Paso 3.
