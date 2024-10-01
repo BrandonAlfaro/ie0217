@@ -9,15 +9,15 @@ template <typename T>
 void bubbleSort(vector<T>& array);
 
 template <typename T>
-void insertionSort(vector<T>& arr);
+void insertionSort(vector<T>& array);
 
 template <typename T>
-void quickSort(vector<T>& arr, int low, int high);
+void quickSort(vector<T>& array, int low, int high);
 
 template <typename T>
-void selectionSort(svector<T>& arr);
+void selectionSort(vector<T>& array);
 
 template <typename T>
-void stlSort(svector<T>& arr);
+void stlSort(vector<T>& array);
 
 #endif //ALGORITMOS_ORDENAMIENTO_HPP
