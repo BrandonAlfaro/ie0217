@@ -1,4 +1,5 @@
 #include "algoritmos_ordenamiento.hpp"
+#include <algorithm>
 
 using namespace std;
 
