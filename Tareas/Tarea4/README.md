@@ -66,7 +66,7 @@ make run_args <arg1> <arg2> <arg3> <...>
 ## Página Web 
 
 > [!NOTE]
-> [Documentación generada por Doxygen como una página web](https://programas-abb-ledc.netlify.app/)
+> [Documentación generada por Doxygen como una página web](https://benchmarks-algoritmos-ordenamiento.netlify.app/)
 
 ## Parte Teórica
 
