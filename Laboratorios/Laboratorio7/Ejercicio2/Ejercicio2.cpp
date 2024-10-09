@@ -1,3 +1,12 @@
+/* Archivos necesarios para compilar y ejecutar:
+    - sqlite3.h
+    - sqlite3.def
+    - sqlite3.dll
+
+    Comando en terminal: g++ Ejercicio2.cpp -o main.exe -L . -lsqlite3
+    Comando en terminal: ./main.exe
+*/
+
 #include <iostream>
 #include "sqlite3.h"
 
