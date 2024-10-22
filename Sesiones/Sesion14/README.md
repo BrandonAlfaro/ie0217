@@ -158,7 +158,7 @@ cd <direccion>
 Crear un archivo ejecutable(.exe) y compilar el código.
 
 ```bash
-g++ -o .\<nombre_ejecutable.exe> .\<nombre_archivo_codigo.cpp>
+g++ -std=c++20 -o .\<nombre_ejecutable.exe> .\<nombre_archivo_codigo.cpp>
 ```
 
 ### Paso 3.
